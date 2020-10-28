@@ -1,0 +1,12 @@
+<div class="elements-view__ctrls">
+  <form ng-submit="setWidth()">
+    <label>Width: <input type="number" ng-model="model.width" min="100" max="600" step="1"></label>
+    <button type="submit">Set</button>
+  </form>
+</div>
+<div class="elements-view__elems">
+  <button class="button-class" style="width:{{model.widthButton}}px">BUTTON</button>
+  <p>Item 1  Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1 Item 1</p>
+  <p>Item 2  Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2</p>
+  <p>Item 3  Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3 Item 3</p>
+</div>

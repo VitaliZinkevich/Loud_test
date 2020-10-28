@@ -1,0 +1,28 @@
+@import "variables";
+
+elements-view {
+  display: block;
+}
+
+.elements-view__ctrls {
+  padding: 10px;
+  border-bottom: 1px solid @c-gray;
+}
+
+.elements-view__elems {
+  button {
+    &:hover{
+      background-color: #A9A9A9;
+      color: grey
+    }
+  }
+
+  p {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &:hover{
+      background-color: #A9A9A9;
+    }
+  }
+}

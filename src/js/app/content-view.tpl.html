@@ -1,0 +1,19 @@
+<some-1></some-1>
+<div>
+    <div>
+        <p>Order:<select ng-model="sortBy" ng-change="localFiltreSearch()">
+            <option value='date'>date</option>
+            <option value='title'>title</option>
+        </select>
+        </p>
+        <p>With time? <input type="checkbox" ng-model="withDate"/></p>
+        <p>Search: <input type="text" ng-model="search" ng-change="localFiltreSearch()"/></p>
+    </div>
+    <ul>
+        <li ng-repeat="item in filtredData" ng-click="localSetSelectedItem(item)">
+            <p>Title: {{item.title}}</p>
+            <p ng-if="withDate">Date: {{item.date | date:'yyyy-MM-dd HH:mm:ss'}}</p>
+            <p ng-if="!withDate">Date: {{item.date | date:'yyyy-MM-dd'}}</p>
+        </li>
+    </ul>
+</div>

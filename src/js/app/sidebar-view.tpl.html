@@ -1,0 +1,9 @@
+<div>
+    <p>Selected Item: {{selectedItem.title}}</p>
+    <p>Selected item tags:
+        <ul>
+            <li ng-repeat="tag in selectedItem.tags track by $index">{{tag}} <span ng-click="deleteTag(tag)">X</span></li>
+        </ul>
+    </p>
+    <p>New tag: <input ng-model="newTag" /><button ng-click="addTag()">Add tag</button></p>
+</div>
